@@ -1,0 +1,389 @@
+
+/* ...or hosted services like Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&family=Ubuntu:wght@300&display=swap');
+
+
+/*   ----- Variables  -----  */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: rgba(237, 161, 10, 0.896);
+    --article-color: rgb(221, 214, 214);
+    --text-color: rgb(98, 98, 98); 
+    --custom-size:;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {                     /* Can alternatively define in html {} or :root {} */
+    background-color: var(--body-color);
+    text-align: center;
+    min-width: 600px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 2em;
+}
+
+/* ----- Anchors ----- Text links */
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+
+/*  ----- .navbar class use for styling a div element that wraps all nav elements ----- */
+
+nav {
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family:'Cuprum', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: rgba(29, 83, 25, 0.9);
+    color:ivory;
+    
+  }
+  
+nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+nav:hover {
+    background-color: ivory;
+    color:rgba(29, 83, 25, 0.9);
+  }
+
+/*  ----- Page layout blocks -----  */
+header {
+    font-family: 'Press Start 2P', cursive;
+    color: seashell;
+    background-color: black;
+    line-height: 3em;
+    min-width: 800px;
+    max-width: 1000px;
+    min-height: 100px;
+    padding: 1%;
+}
+
+header p {
+    font-family: 'Aboreto', cursive;
+    color: seashell;
+    background-color: inherit;
+    line-height: 2em;
+    font-size: large;
+    font-weight: bolder;
+    font-style:oblique;
+}
+
+main {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 1.2em;
+    padding: 3%;
+    min-width: 800px;
+    max-width: 1000px;
+    min-height: 62vmax;
+    background-color: var(--article-color); 
+}
+
+
+section {}
+    article {}
+
+div{}
+    .navbar {
+        display:inline-flex;
+        justify-content: space-evenly;
+        margin: 5px auto;
+        gap: 75px;
+    }
+
+aside {}
+
+footer {
+    position: fixed;
+    padding: 5px 0 0 0;
+    bottom:0;
+    width:800px;
+    min-height: fit-content;
+    max-height: 5vh;
+    background: black;
+    margin-top: 10px;
+}
+
+footer p {
+    color: seashell;
+    text-align: center;
+    font-size: 1.2rem;
+}
+/*  -----  Typography  ----- */
+p {
+    font: inherit;
+    padding: 3px;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+}
+
+/* ---- use for centering paragraphs within article ----*/
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+    text-align: center;
+} /* Define consistant font family.*/
+
+h1 {
+    font-family: "Press Start 2P", cursive;
+    font-size: 2.2rem;
+    color:seashell;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+    q {}
+    cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+    .change-cursor{
+        cursor:pointer;
+    }
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}
+
+/*  ----- Table ----- */
+table {
+    border-collapse: collapse;
+    border: 5px solid lightyellow;
+    padding: 10px;
+    margin:auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position:relative;
+    line-height: 1.5rem;
+    align-items: center;
+}
+
+#add-or-edit{
+    table-layout: fixed;
+    max-width: 800px;
+    width:100% !important;
+}   
+
+caption {
+    text-align: center;
+    margin-bottom: 12px;
+    caption-side: top;
+}
+
+thead {
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid rgb(255, 255, 224);
+    padding: 8px 0;
+    position: sticky;
+    top:0;
+    background-color: darkorange;
+    color: ivory;
+}
+
+tbody {
+    border: 1px solid rgb(255, 255, 224);
+    font-size: 1.25rem;
+    padding: 20px;
+}
+
+tfoot {}
+
+tr {
+    padding: 10px;
+
+}
+    tr:nth-child(even) {
+    background-color:rgba(176, 176, 176, 0.195); ;
+}
+
+th {
+    padding: 10px;
+    border: inherit;
+    width: fit-content;
+}
+
+td {
+    min-width: fit-content;
+    width: 150px;
+    margin: 0 10px;
+    padding: 3px;
+    text-align: left;
+    text-indent: 0.25em;
+}
+
+    td:nth-child(1) {}
+
+    #td-icon { 
+        text-align: center;
+    }
+
+    #td-add-edit {
+        margin: auto;
+        text-align: center;
+        max-width: fit-content;
+    }
+
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {
+    line-height: 1.75rem;
+    width: 100%;
+    text-align: center;
+}
+
+fieldset {}
+    legend {
+    }
+
+label {}
+
+    button {
+        font-family:'Cuprum', sans-serif;
+        font-size: larger;
+        font-weight: bold;
+        border-radius: 7px;
+        background-color: rgba(29, 83, 25, 0.9);
+        color:ivory;
+        border:none;
+        
+    }
+    button:hover{
+        cursor:pointer;
+        background-color: ivory;
+        color:rgba(29, 83, 25, 0.9); 
+    }
+#button-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+
+}
+
+    input {
+        font-family: "Cuprum", sans-serif;
+        font-size: large;
+        
+    }
+    .digit {
+    width: 50px;
+}
+    input:valid{
+        background-color: rgb(255, 255, 200);
+        border:none;
+        outline: 2px solid limegreen;
+        border-radius: 5px;
+    }
+
+    input:invalid{
+        background-color: rgb(255, 255, 200);
+        border:none;
+        outline: 2px solid red;
+        border-radius: 5px;
+    }
+
+    output {}
+    meter {}
+    progress {}
+    select {
+        font-family: 'Cuprum', sans-serif;
+        font-size: large;
+        background-color: rgb(255, 255, 200);
+        border: 2px solid limegreen;
+        border-radius: 5px;
+    }
+    optgroup {}
+    option {}
+    textarea {}
+
+/* ----- Media ----- */
+figure {}
+    figcaption {}
+img {}
+svg {}
+picture {}
+    source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
