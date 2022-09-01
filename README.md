@@ -4,12 +4,6 @@ This app is created using MongoDB, Express, React, and Node.js (MERN) following 
 User can enter the exercise along with any additional parameter at a specified date. User can 
 also modify existing exercises, or delete it altogether. 
 
-```
-08/10/2022 - Add backend API (express, mongoDB, mongoose)
-
-08/17/2022 - Add frontend API (react, HTML, CSS)
-```
-
 **NOTE**: You need to install Node.js and npm package to run this program. To get started, check out https://nodejs.org/en/ and download the most current version of Node.js (this program uses version 16.17.0) for your operating system. I will also assume that you already have git installed. If not, check out https://git-scm.com/book/en/v2/Getting-Started-Installing-Git. You will also need to register an account and create a free cluster on mongoDB in order to host your own database. Check out https://www.mongodb.com/cloud/atlas/register
 
 ## Getting Started
@@ -49,7 +43,7 @@ To connect your mongoDB cluster to your backend API, you need to grab the connec
 
 ![Connect String](https://github.com/dangja92/Track-My-Reps-Heroku/blob/assets/mongoDB_connect.jpg?raw=true "MongoDB Connect String")
 
-Once you've copied your connect string, navigate to the directory where you've cloned this respository. Double click on **exercise-tracker-backend**. Find the **.env** file and edit it by pasting your connect string to **MONGODB_CONNECT_STRING**
+Once you've copied your connect string, navigate to the directory where you've cloned this respository. Find the **.env** file and edit it by pasting your connect string to **MONGODB_CONNECT_STRING**
 
 ![ENV File](https://github.com/dangja92/Track-My-Reps-Heroku/blob/assets/add_connect_string.jpg?raw=true ".env File Path For Connect String" )
 
