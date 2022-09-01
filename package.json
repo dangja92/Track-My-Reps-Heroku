@@ -1,0 +1,25 @@
+{
+  "name": "dangja_backend",
+  "version": "1.0.0",
+  "engines" : {
+	  "node": "16.x",
+	  "npm": "8.x"
+  },
+  "description": "Track your exercises. Hosted by Heroku",
+  "main": "controller.mjs",
+  "scripts": {
+    "start": "node controller.mjs",
+    "server": "nodemon controller.mjs",
+    "client": "npm start --prefix client",
+    "eject": "react-scripts eject",
+	  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19"
+  }
+}
